@@ -5,6 +5,10 @@ const faker = require('faker');
 /**
  * Generates a random string
  */
-module.exports = ({ uppercase, lowercase, trim }) => {
+module.exports = ({ required }) => {
+  if (!required && Math.random() < 0.3) {
+    return null;
+  }
+
   return faker.internet.userName();
 };

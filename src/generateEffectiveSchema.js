@@ -18,7 +18,7 @@
 const generateDefinition = path => {
   return {
     type: Array.isArray(path.type) ? path.type[0] : path.type,
-    required: !!path.nullable,
+    required: !path.nullable,
     default: typeof path.default === 'function' ? path.default() : path.default,
     isEnum: Array.isArray(path.enum),
     enum: path.enum,
