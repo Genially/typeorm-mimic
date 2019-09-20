@@ -1,7 +1,7 @@
 {
   "name": "@genially/typeorm-mimic",
   "description": "typeorm-mimic is a small (but powerful) Node.js library to generate test data using only the TypeORM schema",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "main": "src/index.js",
   "scripts": {
     "test": "jest",
@@ -42,6 +42,7 @@
   "devDependencies": {
     "@commitlint/cli": "8.1.0",
     "@commitlint/config-conventional": "8.1.0",
+    "@semantic-release/git": "7.0.16",
     "husky": "3.0.5",
     "jest": "24.9.0",
     "jest-extended": "0.11.2",
